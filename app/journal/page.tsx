@@ -7,6 +7,8 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Journal | Resonance',
   description: 'Why I wrote Resonance - Where narratives end, Resonance begins.',
+  keywords: 'Resonance, journal, blog, sci-fi, novel, literature',
+  authors: [{ name: 'Shengchuan Yue' }],
   openGraph: {
     title: 'Why I wrote Resonance | Resonance',
     description: 'Where narratives end, Resonance begins.',
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: 'Why I wrote Resonance',
+        type: 'image/jpeg',
       },
     ],
     locale: 'en_US',
@@ -30,6 +33,13 @@ export const metadata: Metadata = {
     title: 'Why I wrote Resonance | Resonance',
     description: 'Where narratives end, Resonance begins.',
     images: ['https://resonantia.world/resonance-cover.jpg'],
+  },
+  alternates: {
+    canonical: 'https://resonantia.world/journal',
+  },
+  other: {
+    'og:image:secure_url': 'https://resonantia.world/resonance-cover.jpg',
+    'og:image:url': 'https://resonantia.world/resonance-cover.jpg',
   },
 }
 
