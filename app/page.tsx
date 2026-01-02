@@ -9,11 +9,7 @@ import NovelModal from '@/components/NovelModal'
 export default function Home() {
   const [isNovelModalOpen, setIsNovelModalOpen] = useState(false)
   return (
-    <div className="h-screen w-screen max-h-screen max-w-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden relative water-ripple-bg" style={{ height: '100vh' }}>
-      {/* Additional ripple layers */}
-      <div className="ripple-layer-1"></div>
-      <div className="ripple-layer-2"></div>
-      <div className="ripple-layer-3"></div>
+    <div className="h-screen w-screen max-h-screen max-w-screen flex flex-col items-center justify-center text-white overflow-hidden relative" style={{ height: '100vh' }}>
       <div className="flex flex-col items-center justify-center gap-3 sm:gap-4 md:gap-6 px-4 py-2 w-full max-w-full relative z-10">
         {/* Logo - top center */}
         <div className="text-white flex-shrink-0">
