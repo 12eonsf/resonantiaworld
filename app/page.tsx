@@ -1,10 +1,15 @@
+'use client'
+
+import { useState } from 'react'
 import ResonanceLogo from '@/components/ResonanceLogo'
 import ResonanceSlogan from '@/components/ResonanceSlogan'
 import Link from 'next/link'
+import NovelModal from '@/components/NovelModal'
 
 export default function Home() {
+  const [isNovelModalOpen, setIsNovelModalOpen] = useState(false)
   return (
-    <div className="h-screen w-screen max-h-screen max-w-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden relative water-ripple-bg">
+    <div className="h-screen w-screen max-h-screen max-w-screen flex flex-col items-center justify-center bg-black text-white overflow-hidden relative water-ripple-bg" style={{ height: '100vh' }}>
       {/* Additional ripple layers */}
       <div className="ripple-layer-1"></div>
       <div className="ripple-layer-2"></div>
@@ -38,15 +43,20 @@ export default function Home() {
             <span className="nav-text">Journal</span>
           </Link>
           <span className="nav-separator">|</span>
-          <Link 
-            href="/the-novel" 
+          <button 
+            onClick={() => setIsNovelModalOpen(true)}
             className="nav-link-geek"
           >
             <span className="nav-prefix">&gt;</span>
             <span className="nav-text">The Novel</span>
-          </Link>
+          </button>
         </nav>
       </div>
+      
+      <NovelModal 
+        isOpen={isNovelModalOpen} 
+        onClose={() => setIsNovelModalOpen(false)} 
+      />
     </div>
   )
 }

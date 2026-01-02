@@ -11,12 +11,15 @@ export default function Footer() {
               href="https://resonantiaworld.substack.com/" 
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white/60 hover:text-white transition-colors"
+              className="text-white/60 hover:text-white transition-all font-mono text-xs border border-white/20 px-3 py-1.5 hover:border-white/40 hover:bg-white/5 group"
               aria-label="Substack"
             >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M22.539 8.242H1.46V5.406h21.08v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.08V0z"/>
-              </svg>
+              <span className="flex items-center gap-1.5">
+                <span className="text-white/40 group-hover:text-white/60">[</span>
+                <span>Substack</span>
+                <span className="text-white/40 group-hover:text-white/60">]</span>
+                <span className="text-white/40 group-hover:text-white/60 ml-1">→</span>
+              </span>
             </a>
           </div>
 

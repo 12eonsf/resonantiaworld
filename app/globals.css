@@ -30,6 +30,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Futuristic font for blog post text */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
+
+.blog-post-text {
+  font-family: 'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  font-feature-settings: 'liga' 1, 'kern' 1;
+}
+
 /* Glitch drift shadow effect for Resonance text */
 @keyframes glitch-drift {
   0% {
@@ -157,6 +167,29 @@ body {
   
   .nav-separator {
     font-size: 0.875rem;
+  }
+}
+
+/* Blog post styles */
+.blog-post {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+.blog-post h1 {
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.blog-post p {
+  text-align: justify;
+  hyphens: auto;
+}
+
+@media (max-width: 640px) {
+  .blog-post p {
+    text-align: left;
   }
 }
 
