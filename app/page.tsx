@@ -26,7 +26,7 @@ export default function Home() {
 
         {/* Slogan component */}
         <div className="mt-1 flex-shrink-0 max-w-full overflow-hidden">
-          <ResonanceSlogan className="text-xs sm:text-sm font-mono tracking-wide" />
+          <ResonanceSlogan className="text-xs sm:text-sm font-mono tracking-wide text-white/60" />
         </div>
 
         {/* Navigation Links - Journal and The Novel */}

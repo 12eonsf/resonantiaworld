@@ -48,7 +48,7 @@ export default function JournalPage() {
     <div className="min-h-screen text-white flex flex-col relative">
       <Navigation />
       
-      <main className="flex-1 pt-16 relative z-10">
+      <main className="flex-1 pt-24 md:pt-20 relative z-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
           {/* Header */}
           <header className="mb-16">

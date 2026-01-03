@@ -5,6 +5,8 @@ import { usePathname } from 'next/navigation'
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import NovelModal from './NovelModal'
+import ResonanceLogo from './ResonanceLogo'
+import ResonanceSlogan from './ResonanceSlogan'
 
 export default function Navigation() {
   const pathname = usePathname()
@@ -30,7 +32,8 @@ export default function Navigation() {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 bg-black/80 backdrop-blur-sm border-b border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Desktop Navigation */}
+        <div className="hidden md:block max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             {/* Resonance Title */}
             <Link 
@@ -43,7 +46,7 @@ export default function Navigation() {
             </Link>
             
             {/* Desktop Navigation Links */}
-            <div className="hidden md:flex items-center gap-1 sm:gap-2">
+            <div className="flex items-center gap-1 sm:gap-2">
               <Link 
                 href="/journal" 
                 className={`nav-link-geek ${pathname === '/journal' ? 'border-white/40 bg-white/5' : ''}`}
@@ -60,34 +63,55 @@ export default function Navigation() {
                 <span className="nav-text">The Novel</span>
               </button>
             </div>
+          </div>
+        </div>
 
-            {/* Mobile Menu Icon */}
+        {/* Mobile Navigation - Three Rows */}
+        <div className="md:hidden">
+          {/* Row 1: Logo + Resonance */}
+          <div className="flex items-center justify-center gap-2 px-4 py-2">
+            <ResonanceLogo size={32} />
+            <Link 
+              href="/" 
+              className="text-base font-light tracking-[0.3em] uppercase glitch-text hover:opacity-80 transition-opacity"
+              data-text="RESONANCE"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              RESONANCE
+            </Link>
+          </div>
+
+          {/* Row 2: Slogan */}
+          <div className="flex items-center justify-center px-4 pb-2">
+            <ResonanceSlogan className="text-xs font-mono tracking-wide text-white/60" />
+          </div>
+
+          {/* Row 3: Menu Icon */}
+          <div className="flex items-center justify-center px-4 pb-2">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden text-white/80 hover:text-white transition-colors p-2"
+              className="text-white/80 hover:text-white transition-colors p-2 flex items-center justify-center"
               aria-label="Toggle menu"
             >
               <svg
-                className="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
+                width="24"
+                height="24"
                 viewBox="0 0 24 24"
+                className="w-6 h-6"
+                style={{ overflow: 'visible' }}
               >
-                {isMobileMenuOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
+                <text
+                  x="12"
+                  y="16"
+                  textAnchor="middle"
+                  dominantBaseline="middle"
+                  fontSize={isMobileMenuOpen ? "20" : "22"}
+                  fontFamily="system-ui, -apple-system, sans-serif"
+                  fill="currentColor"
+                  fontWeight="300"
+                >
+                  {isMobileMenuOpen ? '∞' : '≋'}
+                </text>
               </svg>
             </button>
           </div>

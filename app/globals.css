@@ -76,7 +76,8 @@ body {
   color: #00fffc;
   text-shadow: 
     0 0 2px rgba(0, 255, 252, 0.3),
-    0 0 4px rgba(0, 255, 252, 0.2);
+    0 0 4px rgba(0, 255, 252, 0.2),
+    0 0 1px rgba(255, 0, 0, 0.2);
   animation: glitch-drift 4s ease-in-out infinite;
   z-index: -1;
   opacity: 0.6;
@@ -96,10 +97,11 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  color: #ff00ff;
+  color: #ff0080;
   text-shadow: 
-    0 0 2px rgba(255, 0, 255, 0.3),
-    0 0 4px rgba(255, 0, 255, 0.2);
+    0 0 2px rgba(255, 0, 128, 0.3),
+    0 0 4px rgba(255, 0, 128, 0.2),
+    0 0 1px rgba(255, 0, 0, 0.25);
   animation: glitch-drift 4s ease-in-out infinite reverse;
   z-index: -1;
   opacity: 0.6;
