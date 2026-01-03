@@ -31,7 +31,7 @@ body {
 }
 
 /* Futuristic font for blog post text */
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
 
 .blog-post-text {
   font-family: 'Inter', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -63,6 +63,9 @@ body {
   position: relative;
   display: inline-block;
   isolation: isolate;
+  font-weight: 700;
+  font-family: 'Orbitron', 'Space Grotesk', monospace, sans-serif;
+  letter-spacing: 0.3em;
   /* Main text stays still - no animation */
 }
 
@@ -74,10 +77,6 @@ body {
   width: 100%;
   height: 100%;
   color: #00fffc;
-  text-shadow: 
-    0 0 2px rgba(0, 255, 252, 0.3),
-    0 0 4px rgba(0, 255, 252, 0.2),
-    0 0 1px rgba(255, 0, 0, 0.2);
   animation: glitch-drift 4s ease-in-out infinite;
   z-index: -1;
   opacity: 0.6;
@@ -98,10 +97,6 @@ body {
   width: 100%;
   height: 100%;
   color: #ff0080;
-  text-shadow: 
-    0 0 2px rgba(255, 0, 128, 0.3),
-    0 0 4px rgba(255, 0, 128, 0.2),
-    0 0 1px rgba(255, 0, 0, 0.25);
   animation: glitch-drift 4s ease-in-out infinite reverse;
   z-index: -1;
   opacity: 0.6;

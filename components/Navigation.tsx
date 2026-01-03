@@ -38,7 +38,7 @@ export default function Navigation() {
             {/* Resonance Title */}
             <Link 
               href="/" 
-              className="text-lg sm:text-xl md:text-2xl font-light tracking-[0.3em] uppercase glitch-text hover:opacity-80 transition-opacity"
+              className="text-lg sm:text-xl md:text-2xl uppercase glitch-text hover:opacity-80 transition-opacity"
               data-text="RESONANCE"
               onClick={() => setIsMobileMenuOpen(false)}
             >
@@ -73,7 +73,7 @@ export default function Navigation() {
             <ResonanceLogo size={32} />
             <Link 
               href="/" 
-              className="text-base font-light tracking-[0.3em] uppercase glitch-text hover:opacity-80 transition-opacity"
+              className="text-base uppercase glitch-text hover:opacity-80 transition-opacity"
               data-text="RESONANCE"
               onClick={() => setIsMobileMenuOpen(false)}
             >

@@ -18,7 +18,7 @@ export default function Home() {
 
         {/* Title - RESONANCE with glitch drift shadow */}
         <h1 
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-light tracking-[0.3em] uppercase glitch-text flex-shrink-0 max-w-full overflow-hidden"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl uppercase glitch-text flex-shrink-0 max-w-full overflow-hidden"
           data-text="RESONANCE"
         >
           RESONANCE
