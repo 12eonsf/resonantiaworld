@@ -63,7 +63,7 @@ body {
   position: relative;
   display: inline-block;
   isolation: isolate;
-  font-weight: 700;
+  font-weight: 500;
   font-family: 'Orbitron', 'Space Grotesk', monospace, sans-serif;
   letter-spacing: 0.3em;
   /* Main text stays still - no animation */
