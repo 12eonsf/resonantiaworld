@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: 'Resonance',
   description: 'Where narratives end, Resonance begins.',
   keywords: 'Resonance, sci-fi, novel, literature',
-  authors: [{ name: 'Shengchuan Yue' }],
+  authors: [{ name: 'S.C. Yue' }],
   icons: {
     icon: '/logo.png',
     apple: '/logo.png',

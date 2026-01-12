@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'Journal | Resonance',
   description: 'Why I wrote Resonance - Where narratives end, Resonance begins.',
   keywords: 'Resonance, journal, blog, sci-fi, novel, literature',
-  authors: [{ name: 'Shengchuan Yue' }],
+  authors: [{ name: 'S.C. Yue' }],
   openGraph: {
     title: 'Why I wrote Resonance | Resonance',
     description: 'Where narratives end, Resonance begins.',
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     ],
     locale: 'en_US',
     type: 'article',
-    authors: ['Shengchuan Yue'],
+    authors: ['S.C. Yue'],
     publishedTime: '2026-01-01T00:00:00Z',
   },
   twitter: {
@@ -69,7 +69,7 @@ export default function JournalPage() {
               coverImage="/resonance-cover.jpg"
               title="Why I wrote Resonance"
               subtitle="Where narratives end, Resonance begins."
-              author="Shengchuan Yue"
+              author="S.C. Yue"
               date="Jan 01, 2026"
               content={`
 As 2025 comes to an end, I find myself emerging from a long stretch of fatigue. It was shaped by ongoing conflicts, unresolved relationships, excessive responsibility, and the lingering sense of failure. But looking back, there is one thing I can say with quiet certainty: over the course of this year, I finally worked out the shape of the sci-fi novel I am about to write—Resonance.
@@ -93,6 +93,14 @@ When systems operate too smoothly, when hesitation is interpreted as inefficienc
 The three months of lockdown in Shanghai in 2022 gave this sensation a concrete shape. What lingered most was not confinement itself, but the realization that individual experience had lost its weight as a variable. Explanations were already in place. Decisions had already been made. Life continued according to a logic that did not require your interior state. You were not singled out; you were absorbed. Standing inside that system felt like standing on a gently swaying bridge—constantly adjusting, only to feel the movement grow stronger.
 
 Living in London later introduced a contrasting rhythm. Bureaucracy, legal procedures, and social safety systems often moved slowly, sometimes painfully so. Problems resisted quick resolution. Yet within that inefficiency, another quality became visible. Delay created distance. Distance allowed restraint. Certain outcomes were prevented simply because systems could not move fast enough to finalize them.
+
+Around the same time, I found myself repeatedly returning to an event that had taken place in Seattle years earlier: Richard Russell, a ground service worker who, late one evening, boarded an aircraft he was not meant to fly, took off alone, circled the sky, spoke calmly to air traffic control, and then disappeared.
+
+He left behind no declaration of purpose, no appeal, no audience to convince. What remains are recordings that register as fragments rather than statements—apologies, small jokes, unfinished thoughts. His flight has been subjected to extensive analysis, diagnosis, and classification, yet the unease it generates continues to linger. What held my attention was the form of the event itself. It carried the contour of a novel, while withholding the sense of explanation that fiction often supplies. The event unfolded fully and quietly, then reached its end. When set against systems built to predict, stabilize, and correct, his action appeared uniquely dangerous. The risk did not lie in its destructive potential, but in its posture toward meaning. It moved forward without appealing for interpretation. It unfolded without seeking recognition. It occurred, and then it stopped.
+
+As I was writing this essay and beginning work on Resonance, something unexpetedly occurred in my real life that brought me into a painful alignment with the world I was trying to describe. To this day, I am unable—and unwilling—to recount that incident fully online. Not because it is unspeakable, but because I understand what would happen the moment it is articulated. Once expressed, it would be captured again: logged, categorized, correlated, fed back into systems designed to assess risk, predict states, and infer futures. Expression would not lead to response; it would lead to re-entry. Even this piece would inevitably become part of it.
+
+When systems attempt to preempt hypothetical crises through big data, statistical modeling, correlation, and prediction, individual explanation ceases to function as communication. It is absorbed, flattened, and dissolved into preconclusions generated elsewhere. In that moment, what arises is not helplessness, but something more arresting—a kind of paralysis that comes from realizing there is no longer a position outside the narrative being constructed around you. What stands before you is a fully formed, internally coherent story you are compelled to inhabit. Action and will are no longer legible as expressions; they appear only as disruptive noise within an otherwise stable model. In some cases, definition precedes action entirely—you are classified before you move.
 
 Alongside these structural experiences, my personal life carried a steady undercurrent of anxiety and existential doubt. Family relationships, ongoing responsibility, and the peculiar intimacy of urban life sharpened my sensitivity to connection. The desire to be understood lived alongside a quiet fear of total understanding—because full understanding often dissolves boundaries. Cities place people close together, yet rarely allow genuine meeting. Relationships encourage endurance and acceptance, but seldom offer space to pause and ask what happens when adjustment becomes exhaustion.
 
